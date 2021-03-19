@@ -1,8 +1,18 @@
 @import "mixins/mixins.scss";
+@import "variables/variables.scss";
 
-.header{
+.core-header{
+    @include simpleflex(row, space-between, center);
+    padding: 1vw;
     &__title{
-        color: #f0a;
-        padding: 1vw;
+        font-family: $sans;
+    }
+}
+.menu{
+    @include simpleflex(row, space-between, center);
+    &__element{
+        margin-right: 1vw;
+        list-style: none;
+        font-family: $serif;
     }
 }

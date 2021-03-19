@@ -1,7 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: "GatsbyProjekt",
+    title: "GatsbyProb",
+    author: "Foxnacity",
   },
   pathPrefix: "/GatsbyProjekt",
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      }
+    },
+    'gatsby-transformer-remark',
+
+  ],
 };

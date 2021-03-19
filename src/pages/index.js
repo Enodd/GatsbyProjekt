@@ -1,15 +1,13 @@
 import * as React from "react"
-import { Link } from 'gatsby'
-import * as cs from "../styles/global.scss"
-import Header from "../components/header"
+// import { Link } from 'gatsby'
+// import Header from "../components/header"
+import Layout from "../components/layout"
 
 const IndexPage = () => {
     return (
-        <div className="container">
-            <Header />
-            <p>wassup</p>
-            <Link to="">pozdrawiam</Link>
-        </div>
+        <Layout>
+            <p>Just Casual Lorem Ipsum</p>
+        </Layout>
     )
 }
 

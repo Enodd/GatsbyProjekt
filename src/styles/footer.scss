@@ -1,0 +1,14 @@
+@import "mixins/mixins.scss";
+@import "variables/variables.scss";
+
+.core-footer{
+    @include simpleflex(column, center, center);
+    padding: 1vw;
+    &__author{
+        font-family: $sans;
+    }
+    &__link{
+        font-family: $sans;
+        text-decoration: none;
+    }
+}
