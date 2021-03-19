@@ -12,6 +12,9 @@ const Blogpage = () => {
                         title
                         date
                     }
+                    fields{
+                        slug
+                    }
                 }
             }
         }
@@ -23,7 +26,7 @@ const Blogpage = () => {
                 {data.allMarkdownRemark.edges.map((edge) => {
                     return (
                         <li className="post-list__element post">
-                            <Link to="/">
+                            <Link to={`/blog/${edge.node.fields.slug}`}>
                                 <h2 className="post__title">
                                     {edge.node.frontmatter.title}
                                 </h2>
