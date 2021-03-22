@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 const Blogpage = () => {
     const data = useStaticQuery(graphql`
@@ -22,11 +23,12 @@ const Blogpage = () => {
     `)
     return (
         <Layout>
+            <Head title="Blog" />
             <ol className="post-list">
                 {data.allMarkdownRemark.edges.map((edge) => {
                     return (
                         <li className="post-list__element post">
-                            <Link to={`/blog/${edge.node.fields.slug}`}>
+                            <Link className="post__link" to={`/blog/${edge.node.fields.slug}`}>
                                 <h2 className="post__title">
                                     {edge.node.frontmatter.title}
                                 </h2>

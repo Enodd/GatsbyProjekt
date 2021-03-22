@@ -42,20 +42,6 @@
     padding-bottom: $padbot;
     padding-right: $padright;
 }
-@mixin polozenie($top, $bot, $left, $right){
-    @if $top != none{
-        top: $top;
-    }
-    @if $bot != none{
-        bottom: $bot;
-    }
-    @if $left != none{
-        left: $left;
-    }
-    @if $right != none{
-        right: $right;
-    }
-}
 @mixin marginy($martop, $marleft, $marbot,$marright){
         margin-top: $martop;
         margin-left: $marleft;
@@ -63,10 +49,17 @@
         margin-right: $marright;
 
 }
+
 @mixin glassmorph($bgcolor, $blur, $shadowcolor){
     background: $bgcolor;
     box-shadow: 0 8px 32px 0 $shadowcolor;
     backdrop-filter: blur( $blur );
     -webkit-backdrop-filter: blur( $blur );
     border-radius: 10px;
+}
+
+@mixin gradientHighlight(){
+    background: -webkit-linear-gradient(45deg, rgba(4,138,129,1) 0%, rgba(6,214,160,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
