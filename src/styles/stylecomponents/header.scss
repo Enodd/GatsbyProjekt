@@ -1,0 +1,108 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+
+.core-header{
+    width: 100%;
+    @include simpleflex(row, space-between, center);
+    background-color: $dark;
+    position: sticky;
+    z-index: 2;
+    top: 0vw;
+    &__title{
+        padding:5vw;
+        font-family: $sans;
+        font-size: 6.5vw;
+        color: #fff;
+    }
+}
+.menu{
+    @include simpleflex(row, center, center);
+    &__element{
+        padding: 1.5vw;
+        list-style: none;
+        font-family: $sans;
+        &:hover{
+            background-color: darken($dark, 2%);
+            text-decoration: underline;
+            border-radius: 2vw;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        font-family: $sans;
+        color: #fff;
+        font-size: 4vw;
+    }
+    &--list{
+        background-color: darken($dark, 5%);
+        padding: 5vw;
+        position: absolute;
+        right: 0vw;
+        top: 17vw;
+        z-index: 10;
+    }
+    &--vertical{
+        @include simpleflex(column, center, center);
+        .menu__element{
+            text-decoration: underline;
+        }
+    }
+}
+@media(min-width:540px){
+    .core-header{
+        &__title{
+            padding:4.5vw;
+            font-size: 4vw;
+        }
+    }
+    .menu{
+        &__link{
+            font-size: 3vw;
+        }
+    }
+}
+@media(min-width:720px){
+    .core-header{
+        &__title{
+            padding:4vw;
+            font-size: 3.5vw;
+        }
+    }
+    .menu{
+        &__link{
+            font-size: 2.5vw;
+        }
+    }
+}
+@media(min-width:1024px){
+    .core-header{
+        &__title{
+            padding:3vw;
+            font-size: 3vw;
+        }
+    }
+    .menu{
+        &__link{
+            font-size: 2vw;
+        }
+    }
+}
+@media(min-width:1600px){
+    .core-header{
+        &__title{
+            padding:2vw;
+            font-size: 2.5vw;
+        }
+    }
+    .menu{
+        &__link{
+            font-size: 1.25vw;
+        }
+    }
+}
+#menu {
+    color: white;
+    font-size: 7vw;
+    position: relative;
+    right: 15vw;
+}

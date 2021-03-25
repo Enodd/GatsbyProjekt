@@ -1,0 +1,32 @@
+@import '../variables/variables.scss';
+@import '../mixins/mixins.scss';
+
+.core-main{
+    @include simpleflex(column, center, center);
+    &__section{
+        background-color: $light;
+        width: 80%;
+        margin: auto;
+    }
+}
+.section{
+    padding: 3vw;
+    &__title{
+        @include gradientHighlight();
+        font-family: $serif;
+        margin-bottom: .5vw;
+    }
+    &__content{
+        font-family: $serif;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        &:nth-of-type(1){
+            display: inline;
+        }
+    }
+    &__image{
+        display: block;
+        position: relative;
+        width: 200px;
+    }
+}

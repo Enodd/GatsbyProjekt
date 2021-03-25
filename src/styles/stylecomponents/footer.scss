@@ -1,0 +1,54 @@
+@import "../mixins/mixins.scss";
+@import "../variables/variables.scss";
+
+.core-footer{
+    @include simpleflex(column, center, center);
+    padding: 5vw;
+    background-color: $dark;
+    &__author{
+        font-family: $sans;
+        font-size: 4vw;
+        color: #fff;
+    }
+    &__link{
+        font-family: $sans;
+        text-decoration: none;
+        color: $main-color;
+    }
+}
+//540
+@media (min-width: 540px){
+    .core-footer{
+        padding: 4vw;
+        &__author{
+            font-size: 3.5vw;
+        }
+    }
+}
+//720
+@media (min-width: 720px){
+    .core-footer{
+        padding: 4vw;
+        &__author{
+            font-size: 3vw;
+        }
+    }
+}
+//1024
+@media (min-width: 1024px){
+    .core-footer{
+        padding: 3.5vw;
+        &__author{
+            font-size: 2.5vw;
+        }
+    }
+}
+//1600
+@media (min-width: 1600px){
+    .core-footer{
+        padding: 2vw;
+        &__author{
+            font-size: 2vw;
+        }
+    }
+}
