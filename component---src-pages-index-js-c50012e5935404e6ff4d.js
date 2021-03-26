@@ -1,2 +1,0 @@
-(self.webpackChunkgatsby_projekt=self.webpackChunkgatsby_projekt||[]).push([[678],{39:function(e,t,a){"use strict";a.r(t),a.d(t,{default:function(){return l}});var r=a(294),n=a(444),c=function(){return r.createElement("header",{className:"core-header"},r.createElement("h1",{className:"core-header__title"},"GatsProb"))},l=function(){return r.createElement("div",{className:"container"},r.createElement(c,null),r.createElement("p",null,"wassup"),r.createElement(n.rU,{to:""},"pozdrawiam"))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-c50012e5935404e6ff4d.js.map
