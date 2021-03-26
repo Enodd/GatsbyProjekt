@@ -34,9 +34,6 @@ const Header = () => {
 
     return (
         <header className="core-header">
-            <Helmet>
-                <script src="https://kit.fontawesome.com/55460b0799.js" crossorigin="anonymous"></script>
-            </Helmet>
             <h1 className="core-header__title" id='link'>
                 {data.site.siteMetadata.title}
             </h1>

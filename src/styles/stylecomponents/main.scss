@@ -11,6 +11,15 @@
 }
 .section{
     padding: 3vw;
+    &--vertical{
+        padding: 3vw;
+        @include simpleflex(column, center, center);
+        .section__content{
+            font-family: $serif;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+        }
+    }
     &__title{
         @include gradientHighlight();
         font-family: $serif;

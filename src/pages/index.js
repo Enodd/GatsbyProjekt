@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
                         Witaj na tej zacnej stronie, stworzonej przy użyciu
                     </p>
                     <span className="highlight--purple">&nbsp;Gatsby.</span>
-                    <Img className="section__image" fluid={data.logoGatsby.childImageSharp.fluid} alt='logo gatsby' className="section__image" />
+                    <Img className="section__image" fluid={data.logoGatsby.childImageSharp.fluid} alt='logo gatsby' />
                     <p className="section__content">
                         Tutaj nauczysz się takich rzeczy jak:
                     </p>
