@@ -13,12 +13,12 @@ const Header = () => {
             }
         }
     `)
-    const windowWidth = window.matchMedia('(min-width: 540px)')
-
+    
     const [show, setShow] = useState(false)
     const [men, menShow] = useState(false)
-
+    
     function updateDisplay() {
+        const windowWidth = window.matchMedia('(min-width: 540px)')
         if (windowWidth.matches) {
             setShow(true)
         } else {
