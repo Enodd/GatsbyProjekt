@@ -1,0 +1,51 @@
+@import '../variables/variables.scss';
+@import '../mixins/mixins.scss';
+
+.core-main{
+    @include simpleflex(column, center, center);
+    &__section{
+        background-color: $light;
+        width: 80%;
+        margin: auto;
+    }
+}
+.section{
+    padding: 3vw;
+    &--vertical{
+        padding: 3vw;
+        @include simpleflex(column, center, center);
+    }
+    &__title{
+        @include gradientHighlight();
+        font-family: $serif;
+        margin-bottom: .5vw;
+        font-size: 1.5vw;
+    }
+    &__content{
+        font-size: 1vw;
+        font-family: $serif;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+    &__image{
+        display: block;
+        position: relative;
+        width: 200px;
+    }
+    &__link{
+        text-decoration: none;
+        padding: .75vw;
+        display: block;
+        *{
+            font-size: 2vw;
+        }
+        i{
+            color: $dark;
+        }
+        .link-label{
+            display: inline;
+            color: $dark;
+            font-family: $sans;
+        }
+    }
+}
