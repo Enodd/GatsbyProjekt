@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_projekt=self.webpackChunkgatsby_projekt||[]).push([[589],{194:function(e,t,l){"use strict";l.r(t);var n=l(7294),r=l(5488),u=l(967);t.default=function(){return n.createElement(u.Z,null,n.createElement(r.Z,{title:"O autorze"}),n.createElement("h2",null,"Hello there"))}}}]);
+//# sourceMappingURL=component---src-pages-author-js-c11388b56ff1c58fbe01.js.map
