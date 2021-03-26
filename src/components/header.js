@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import { Helmet } from 'react-helmet'
 import "../styles/stylecomponents/header.scss"
 
 const Header = () => {
@@ -13,10 +12,10 @@ const Header = () => {
             }
         }
     `)
-    
+
     const [show, setShow] = useState(false)
     const [men, menShow] = useState(false)
-    
+
     function updateDisplay() {
         const windowWidth = window.matchMedia('(min-width: 540px)')
         if (windowWidth.matches) {
