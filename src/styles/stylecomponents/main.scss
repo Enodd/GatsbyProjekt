@@ -1,8 +1,10 @@
 @import '../variables/variables.scss';
 @import '../mixins/mixins.scss';
 
+
+
 .core-main{
-    @include simpleflex(column, center, center);
+    @include simpleflex(column, none, none);
     &__section{
         background-color: $light;
         width: 80%;
@@ -11,6 +13,44 @@
 }
 .section{
     padding: 3vw;
+    position: relative;
+    &__title{
+        @include gradientHighlight();
+        font-family: $serif;
+        margin-bottom: 1vw;
+        font-size: 6vw;
+    }
+    &__content{
+        font-family: $serif;
+        width: 70%;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        &:nth-of-type(1){
+            display: inline;
+        }
+    }
+    &__image{
+        display: block;
+        position: relative;
+        width: 20vw;
+        margin: 1vw;
+    }
+    &__link{
+        
+        padding: 1.5vw;
+        display: block;
+        *{
+            font-size: 5vw;
+        }
+        i{
+            color: $dark;
+        }
+        .link-label{
+            display: inline;
+            color: $dark;
+            font-family: $sans;
+        }
+    }
     &--author{
         padding: 3vw;
         @include simpleflex(column, center, center);
@@ -39,7 +79,7 @@
             width: 50vw;
         }
         &__link{
-            text-decoration: none;
+            
             padding: 1.5vw;
             display: block;
             *{
@@ -56,41 +96,12 @@
         }
     }
     }
-    &__title{
-        @include gradientHighlight();
+}
+.content-list{
+    &__element{
         font-family: $serif;
-        margin-bottom: 1vw;
-        font-size: 6vw;
-    }
-    &__content{
-        font-family: $serif;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
-        &:nth-of-type(1){
-            display: inline;
-        }
-    }
-    &__image{
-        display: block;
-        position: relative;
-        width: 20vw;
-        margin: 1vw;
-    }
-    &__link{
-        text-decoration: none;
-        padding: 1.5vw;
-        display: block;
-        *{
-            font-size: 5vw;
-        }
-        i{
-            color: $dark;
-        }
-        .link-label{
-            display: inline;
-            color: $dark;
-            font-family: $sans;
-        }
+        font-size: .85vw;
+        margin-top: .5vw;
     }
 }
 @media(min-width:540px){
@@ -243,6 +254,75 @@
                 }
             }
         }
+        }
+    }
+}
+@media(min-width:1600px){
+    .section{
+        padding: 3vw;
+        &__title{
+            margin-bottom: 2vw;
+            font-size: 4vw;
+        }
+        &__content{
+            font-size: .85vw;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+        }
+        &__image{
+            position: absolute;
+            right: 0vw;
+            top: 0vw;
+            width: 25vw;
+            margin: 0vw;
+        }
+        &__link{
+            padding: 1vw;
+            display: block;
+            width: 10vw;
+            *{
+                font-size: 5vw;
+            }
+        }
+        &--author{
+            padding: 4vw;
+        &:nth-of-type(2){
+            margin-top: 4vw;
+        }
+        .section{
+            &__title{
+                margin-bottom: .75vw;
+                font-size: 2.5vw;
+            }
+            &__content{
+                font-size: 1.25vw;
+                margin-top: 1vw;
+                margin-bottom: 1vw;
+            }
+            &__image{
+                margin: 1vw;
+                width: 20vw;
+            }
+            &__link{
+                padding: 1vw;
+                *{
+                    font-size: 2.75vw;
+                }
+            }
+        }
+        }
+    }
+    .content-list{
+        &__element{
+            font-size: .85vw;
+            margin-top: .5vw;
+        }
+    }
+    .highlight{
+        &--purple{
+            color: #c300ff;
+            font-family: $sans;
+            font-size: .85vw;
         }
     }
 }

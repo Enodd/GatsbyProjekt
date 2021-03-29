@@ -8,12 +8,9 @@
     width: 100%;
     @include simpleflex(column, none, none);
     background-color: #fff;
+    min-height: 100vh;
 }
 
-.highlight{
-    &--purple{
-        color: #c300ff;
-        font-family: $sans;
-        font-size: 1vw;
-    }
+a{
+    text-decoration: none;
 }

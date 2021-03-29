@@ -2,8 +2,12 @@
 @import "../variables/variables.scss";
 
 .core-footer{
-    @include simpleflex(column, center, center);
+    margin: auto;
+    width: 100%;
+    position: sticky;
+    top: 100%;
     padding: 5vw;
+    text-align: center;
     background-color: $dark;
     &__author{
         font-family: $sans;
@@ -11,8 +15,7 @@
         color: #fff;
     }
     &__link{
-        font-family: $sans;
-        text-decoration: none;
+        font-family: $sans;      
         color: $main-color;
     }
 }

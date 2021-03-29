@@ -33,9 +33,11 @@ const Header = () => {
 
     return (
         <header className="core-header">
-            <h1 className="core-header__title" id='link'>
-                {data.site.siteMetadata.title}
-            </h1>
+            <Link className="core-header__link" to="/">
+                <h1 className="core-header__title" id='link'>
+                    {data.site.siteMetadata.title}
+                </h1>
+            </Link>
 
             <div className="core-header__menu">
                 {
@@ -48,11 +50,6 @@ const Header = () => {
                         <li className="menu__element">
                             <Link to="/404" className="menu__link">
                                 404
-                    </Link>
-                        </li>
-                        <li className="menu__element">
-                            <Link to="/" className="menu__link">
-                                Main web
                     </Link>
                         </li>
                         <li className="menu__element">
@@ -81,11 +78,6 @@ const Header = () => {
                                     <li className="menu__element">
                                         <Link to="/404" className="menu__link">
                                             404
-                                        </Link>
-                                    </li>
-                                    <li className="menu__element">
-                                        <Link to="/" className="menu__link">
-                                            Main web
                                         </Link>
                                     </li>
                                     <li className="menu__element">

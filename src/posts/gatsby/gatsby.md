@@ -10,3 +10,12 @@ Zabawa z plikami md
 1. punkt
 2. punkt1
 3. punkt2
+
+
+```js
+    if(a<b){
+        document.write(a);
+    } else {
+        document.write(b);
+    }
+```

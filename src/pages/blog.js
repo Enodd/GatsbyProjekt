@@ -24,22 +24,24 @@ const Blogpage = () => {
     return (
         <Layout>
             <Head title="Blog" />
-            <ol className="post-list">
-                {data.allMarkdownRemark.edges.map((edge) => {
-                    return (
-                        <li className="post-list__element post">
-                            <Link className="post__link" to={`/blog/${edge.node.fields.slug}`}>
-                                <h2 className="post__title">
-                                    {edge.node.frontmatter.title}
-                                </h2>
-                                <p className="post__date">
-                                    {edge.node.frontmatter.date}
-                                </p>
-                            </Link>
-                        </li>
-                    )
-                })}
-            </ol>
+            <main>
+                <ol className="post-list">
+                    {data.allMarkdownRemark.edges.map((edge) => {
+                        return (
+                            <li className="post-list__element post">
+                                <Link className="post__link" to={`/blog/${edge.node.fields.slug}`}>
+                                    <h2 className="post__title">
+                                        {edge.node.frontmatter.title}
+                                    </h2>
+                                    <p className="post__date">
+                                        {edge.node.frontmatter.date}
+                                    </p>
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ol>
+            </main>
         </Layout>
     )
 }
