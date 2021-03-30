@@ -29,7 +29,7 @@ module.exports = {
         ],
         start_url: '/',
         background_color: '#233D4D',
-        theme_color: '#fe7f2d',
+        theme_color: '#233D4D',
       }
     },
     {
