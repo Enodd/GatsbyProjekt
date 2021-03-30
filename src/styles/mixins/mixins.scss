@@ -8,30 +8,11 @@
     width: $width;
     height: $height;
 }
-@mixin simpleflex($dir, $jus, $align){
+@mixin simpleflex($dir:row, $jus:left, $align:flex-start){
     display: flex;
-    @if $dir == none{
-        @if $jus == none and $align != none{
-            align-items: $align;
-        } @else if $align == none and $jus != none{
-            justify-content: $jus;
-        } @else if $jus == none and $align == none{
-        } @else {
-            justify-content: $jus;
-            align-items: $align;
-        }
-    } @else {
-        flex-direction: $dir;
-        @if $jus == none and $align != none{
-            align-items: $align;
-        } @else if $align == none and $jus != none{
-            justify-content: $jus;
-        } @else if $jus == none and $align == none{
-        } @else {
-            justify-content: $jus;
-            align-items: $align;
-        }
-    }
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $align;
 }
 @mixin simplegridcreator($colwidth,$colrep,$rowwidth,$rowrep){
     display: grid;

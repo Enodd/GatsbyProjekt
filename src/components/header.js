@@ -54,7 +54,7 @@ const Header = () => {
                         </li>
                         <li className="menu__element">
                             <Link to="/author" className="menu__link">
-                                About author
+                                o autorze
                     </Link>
                         </li>
                     </ul>
@@ -82,7 +82,7 @@ const Header = () => {
                                     </li>
                                     <li className="menu__element">
                                         <Link to="/author" className="menu__link">
-                                            About author
+                                            o autorze
                                         </Link>
                                     </li>
                                 </ul>

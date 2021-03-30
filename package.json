@@ -18,6 +18,7 @@
   "dependencies": {
     "12": "^1.0.2",
     "@fontsource/rubik": "^4.2.2",
+    "@fontsource/source-code-pro": "^4.2.3",
     "@fontsource/source-serif-pro": "^4.2.2",
     "gatsby": "^3.1.2",
     "gatsby-cli": "^3.1.0",

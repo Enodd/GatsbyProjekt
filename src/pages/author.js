@@ -32,7 +32,7 @@ const about = ({ data }) => {
                     <h3 className="section__title">
                         Moje socialmedia
                     </h3>
-                    <p className="section__content">
+                    <p className="section__content--links">
                         <a className="section__link" href="https://twitter.com/foxnacity">
                             <i className="fab fa-twitter"></i>
                             <p className="link-label">@Foxnacity</p>

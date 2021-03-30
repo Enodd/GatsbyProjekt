@@ -16,8 +16,8 @@ const IndexPage = ({ data }) => {
                     </h2>
                     <p className="section__content">
                         Ta strona została stworzona przy użyciu
-                    </p>
                     <span className="highlight--purple">&nbsp;Gatsby.</span>
+                    </p>
                     <div className="section__image">
                         <Img fluid={data.gatsbyArt.childImageSharp.fluid} alt="astronauta tworzący stronę w gatsby" />
                     </div>
@@ -45,10 +45,12 @@ const IndexPage = ({ data }) => {
                         <li className="content-list__element">
                             Stylizowanie swoich stron i postów.
                         </li>
+                        <li className="content-list__element">
+                            <Link to='/blog' className='content-list__link'>
+                                I wiele więcej
+                            </Link>
+                        </li>
                     </ul>
-                    <Link to='/blog' className='section__link'>
-                        I wiele więcej
-                    </Link>
                 </section>
             </main>
         </Layout>

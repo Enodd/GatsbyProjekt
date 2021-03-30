@@ -19,24 +19,29 @@ module.exports.createPages = async ({ graphql, actions }) => {
     const blogTemplate = path.resolve('./src/templates/blogtemp.js')
     const res = await graphql(`
         query {
-            allMarkdownRemark {
+            allMarkdownRemark(sort: {fields: [frontmatter___id], order: ASC}){
                 edges {
                     node {
                         fields{
                             slug
+                        }
+                        frontmatter{
+                            title
                         }
                     }
                 }
             }
         }
     `)
-
-    res.data.allMarkdownRemark.edges.forEach((edge) => {
+    const articles = res.data.allMarkdownRemark.edges
+    articles.forEach(({ node }, index) => {
         createPage({
             component: blogTemplate,
-            path: `/blog/${edge.node.fields.slug}`,
+            path: `/blog/${node.fields.slug}`,
             context: {
-                slug: edge.node.fields.slug
+                slug: node.fields.slug,
+                previous: index === 0 ? null : articles[index - 1].node,
+                next: index === articles.length - 1 ? null : articles[index + 1].node,
             }
         })
     })

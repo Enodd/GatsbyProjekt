@@ -4,7 +4,7 @@
 
 
 .core-main{
-    @include simpleflex(column, none, none);
+    @include simpleflex(column);
     &__section{
         background-color: $light;
         width: 80%;
@@ -14,43 +14,28 @@
 .section{
     padding: 3vw;
     position: relative;
+    @include simpleflex(column, center, center);
     &__title{
         @include gradientHighlight();
         font-family: $serif;
         margin-bottom: 1vw;
-        font-size: 6vw;
+        font-size: 8vw;
     }
     &__content{
         font-family: $serif;
         width: 70%;
         margin-top: 1vw;
         margin-bottom: 1vw;
-        &:nth-of-type(1){
-            display: inline;
-        }
+        font-size: 3.75vw;
+        text-align: center;
     }
     &__image{
         display: block;
         position: relative;
-        width: 20vw;
+        width: 70vw;
         margin: 1vw;
     }
-    &__link{
-        
-        padding: 1.5vw;
-        display: block;
-        *{
-            font-size: 5vw;
-        }
-        i{
-            color: $dark;
-        }
-        .link-label{
-            display: inline;
-            color: $dark;
-            font-family: $sans;
-        }
-    }
+
     &--author{
         padding: 3vw;
         @include simpleflex(column, center, center);
@@ -66,7 +51,7 @@
             font-size: 6vw;
         }
         &__content{
-            font-size: 4vw;
+            font-size: 3.75vw;
             font-family: $serif;
             margin-top: 2vw;
             margin-bottom: 2vw;
@@ -99,9 +84,59 @@
 }
 .content-list{
     &__element{
+        list-style: none;
         font-family: $serif;
-        font-size: .85vw;
-        margin-top: .5vw;
+        font-size: 3.75vw;
+        margin-top: 1.5vw;
+        text-align: center;
+    }
+    &__link{
+        font-family: $sans;
+        color: #c300ff;
+    }
+}
+.post-list{
+    @include simpleflex(column);
+    margin: auto;
+    text-align: left;
+    list-style: none;
+    &__element{
+        margin: 1vw;
+        font-family: $serif;
+    }
+}
+.post{
+    border: 1px $dark solid;
+    border-radius: 1vw;
+    padding: 3vw;
+    width: 70vw;
+    
+    &__link{
+        text-decoration: none;
+        display: block;
+    }
+    &__title{
+        font-size: 6vw;
+        text-shadow: 2px 1px $main-color;
+        color: $dark;
+        margin: 0;
+    }
+    &__date{
+        font-style: italic;
+        color: #000;
+        font-size: 3.75vw;
+    }
+    &__description{
+        margin-top: 1.5vw;
+        color: #000;
+        font-size: 3.75vw;
+    }
+}
+.highlight{
+    &--purple{
+        color: #c300ff;
+        font-family: $sans;
+        font-size: 3.75vw;
     }
 }
 @media(min-width:540px){
@@ -114,9 +149,10 @@
         &__content{
             margin-top: 1vw;
             margin-bottom: 1vw;
+            font-size: 3vw;
         }
         &__image{
-            width: 20vw;
+            width: 50vw;
             margin: 1vw;
         }
         &__link{
@@ -154,6 +190,35 @@
         }
         }
     }
+    .content-list{
+        &__element{
+            font-size: 3vw;
+            margin-top: 1.5vw;
+        }
+    }
+    .post-list{
+        &__element{
+            margin: 1vw;
+        }
+    }
+    .post{
+        padding: 3vw;
+        width: 60vw;
+        &__title{
+            font-size: 6vw;
+        }
+        &__date{
+            font-size: 3vw;
+        }
+        &__description{
+            font-size: 3vw;
+        }
+    }
+    .highlight{
+        &--purple{
+            font-size: 3vw;
+        }
+    }
 }
 @media(min-width:720px){
     .section{
@@ -165,9 +230,10 @@
         &__content{
             margin-top: 1vw;
             margin-bottom: 1vw;
+            font-size: 2.5vw;
         }
         &__image{
-            width: 20vw;
+            width: 50vw;
             margin: 1vw;
         }
         &__link{
@@ -205,21 +271,51 @@
         }
         }
     }
+    .content-list{
+        &__element{
+            font-size: 2.5vw;
+            margin-top: 1.5vw;
+        }
+    }
+    .post{
+        width: 50vw;
+        &__title{
+            font-size: 4vw;
+        }
+        &__date{
+            font-size: 2.5vw;
+        }
+        &__description{
+            font-size: 2.5vw;
+        }
+    }
+    .highlight{
+        &--purple{
+            font-size: 2.5vw;
+        }
+    }
 }
 @media(min-width:1024px){
     .section{
         padding: 3vw;
+        @include simpleflex(column, left, flex-start);
         &__title{
+            margin: auto;
             margin-bottom: 1vw;
-            font-size: 6vw;
+            font-size: 4.5vw;
         }
         &__content{
             margin-top: 1vw;
             margin-bottom: 1vw;
+            font-size: 1.25vw;
+            text-align: left;
         }
         &__image{
-            width: 20vw;
-            margin: 1vw;
+            position: absolute;
+            right: 0vw;
+            top: 0vw;
+            width: 25vw;
+            margin: 0vw;
         }
         &__link{
             padding: 1.5vw;
@@ -256,6 +352,30 @@
         }
         }
     }
+    .content-list{
+        &__element{
+            font-size: 1.25vw;
+            margin-top: 1.5vw;
+            text-align: left;
+        }
+    }
+    .post{
+        width: 50vw;
+        &__title{
+            font-size: 4vw;
+        }
+        &__date{
+            font-size: 1.25vw;
+        }
+        &__description{
+            font-size: 1.25vw;
+        }
+    }
+    .highlight{
+        &--purple{
+            font-size: 1.25vw;
+        }
+    }
 }
 @media(min-width:1600px){
     .section{
@@ -268,6 +388,9 @@
             font-size: .85vw;
             margin-top: 1vw;
             margin-bottom: 1vw;
+            &--links{
+                @include simpleflex(column, center, center);
+            }
         }
         &__image{
             position: absolute;
@@ -279,7 +402,7 @@
         &__link{
             padding: 1vw;
             display: block;
-            width: 10vw;
+            width: 20vw;
             *{
                 font-size: 5vw;
             }
@@ -318,10 +441,21 @@
             margin-top: .5vw;
         }
     }
+    .post{
+        padding: 2vw;
+        width: 50vw;
+        &__title{
+            font-size: 3vw;
+        }
+        &__date{
+            font-size: .85vw;
+        }
+        &__description{
+            font-size: .85vw;
+        }
+    }
     .highlight{
         &--purple{
-            color: #c300ff;
-            font-family: $sans;
             font-size: .85vw;
         }
     }
