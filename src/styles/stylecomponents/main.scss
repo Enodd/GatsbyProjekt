@@ -1,7 +1,24 @@
 @import '../variables/variables.scss';
 @import '../mixins/mixins.scss';
 
+//===================================================//
+//                  local variables                 //
+//=================================================//
 
+$ps-pt: 6vw;
+$ps-pc: 3.75vw;
+$s540-pt: 6vw;
+$s540-pc: 3vw;
+$s720-pt: 4vw;
+$s720-pc: 2.5vw;
+$s1024-pt: 4vw;
+$s1024-pc: 1.25vw;
+$s1600-pt: 3vw;
+$s1600-pc: .85vw;
+
+//===================================================//
+//                      phone                       //
+//=================================================//
 
 .core-main{
     @include simpleflex(column);
@@ -19,14 +36,14 @@
         @include gradientHighlight();
         font-family: $serif;
         margin-bottom: 1vw;
-        font-size: 8vw;
+        font-size: $ps-t;
     }
     &__content{
         font-family: $serif;
         width: 70%;
         margin-top: 1vw;
         margin-bottom: 1vw;
-        font-size: 3.75vw;
+        font-size: $ps-c;
         text-align: center;
     }
     &__image{
@@ -48,10 +65,10 @@
             @include gradientHighlight();
             font-family: $serif;
             margin-bottom: 1vw;
-            font-size: 6vw;
+            font-size: $ps-t;
         }
         &__content{
-            font-size: 3.75vw;
+            font-size: $ps-c;
             font-family: $serif;
             margin-top: 2vw;
             margin-bottom: 2vw;
@@ -86,7 +103,7 @@
     &__element{
         list-style: none;
         font-family: $serif;
-        font-size: 3.75vw;
+        font-size: $ps-c;
         margin-top: 1.5vw;
         text-align: center;
     }
@@ -116,7 +133,7 @@
         display: block;
     }
     &__title{
-        font-size: 6vw;
+        font-size: $ps-pt;
         text-shadow: 2px 1px $main-color;
         color: $dark;
         margin: 0;
@@ -124,32 +141,38 @@
     &__date{
         font-style: italic;
         color: #000;
-        font-size: 3.75vw;
+        font-size: $ps-pc;
     }
     &__description{
         margin-top: 1.5vw;
         color: #000;
-        font-size: 3.75vw;
+        font-size: $ps-pc;
     }
 }
 .highlight{
     &--purple{
         color: #c300ff;
         font-family: $sans;
-        font-size: 3.75vw;
+        font-size: $ps-pc;
     }
 }
+
+//===================================================//
+//                      540px                       //
+//=================================================//
+
+
 @media(min-width:540px){
     .section{
         padding: 3vw;
         &__title{
             margin-bottom: 1vw;
-            font-size: 6vw;
+            font-size: $s540-t;
         }
         &__content{
             margin-top: 1vw;
             margin-bottom: 1vw;
-            font-size: 3vw;
+            font-size: $s540-c;
         }
         &__image{
             width: 50vw;
@@ -163,23 +186,24 @@
             }
         }
         &--author{
-            padding: 4vw;
+            padding: 3vw;
         &:nth-of-type(2){
             margin-top: 4.5vw;
         }
         .section{
             &__title{
                 margin-bottom: 1vw;
-                font-size: 5vw;
+                font-size: $s540-t;
             }
             &__content{
-                font-size: 3.5vw;
+                font-size: $s540-c;
                 margin-top: 2vw;
                 margin-bottom: 2vw;
             }
             &__image{
                 margin: 1vw;
                 width: 40vw;
+                border-radius: 10vw;
             }
             &__link{
                 padding: 1.5vw;
@@ -192,7 +216,7 @@
     }
     .content-list{
         &__element{
-            font-size: 3vw;
+            font-size: $s540-c;
             margin-top: 1.5vw;
         }
     }
@@ -205,32 +229,37 @@
         padding: 3vw;
         width: 60vw;
         &__title{
-            font-size: 6vw;
+            font-size: $s540-pt;
         }
         &__date{
-            font-size: 3vw;
+            font-size: $s540-pc;
         }
         &__description{
-            font-size: 3vw;
+            font-size: $s540-pc;
         }
     }
     .highlight{
         &--purple{
-            font-size: 3vw;
+            font-size: $s540-c;
         }
     }
 }
+
+//===================================================//
+//                      720px                       //
+//=================================================//
+
 @media(min-width:720px){
     .section{
         padding: 3vw;
         &__title{
             margin-bottom: 1vw;
-            font-size: 6vw;
+            font-size: $s720-t;
         }
         &__content{
             margin-top: 1vw;
             margin-bottom: 1vw;
-            font-size: 2.5vw;
+            font-size: $s720-c;
         }
         &__image{
             width: 50vw;
@@ -254,7 +283,7 @@
                 font-size: 4vw;
             }
             &__content{
-                font-size: 2.5vw;
+                font-size: $s720-c;
                 margin-top: 2vw;
                 margin-bottom: 2vw;
             }
@@ -273,28 +302,33 @@
     }
     .content-list{
         &__element{
-            font-size: 2.5vw;
+            font-size: $s720-c;
             margin-top: 1.5vw;
         }
     }
     .post{
         width: 50vw;
         &__title{
-            font-size: 4vw;
+            font-size: $s720-pt;
         }
         &__date{
-            font-size: 2.5vw;
+            font-size: $s720-pc;
         }
         &__description{
-            font-size: 2.5vw;
+            font-size: $s720-pc;
         }
     }
     .highlight{
         &--purple{
-            font-size: 2.5vw;
+            font-size: $s720-c;
         }
     }
 }
+
+//===================================================//
+//                      1024px                      //
+//=================================================//
+
 @media(min-width:1024px){
     .section{
         padding: 3vw;
@@ -302,12 +336,12 @@
         &__title{
             margin: auto;
             margin-bottom: 1vw;
-            font-size: 4.5vw;
+            font-size: $s1024-t;
         }
         &__content{
             margin-top: 1vw;
             margin-bottom: 1vw;
-            font-size: 1.25vw;
+            font-size: $s1024-c;
             text-align: left;
         }
         &__image{
@@ -332,10 +366,10 @@
         .section{
             &__title{
                 margin-bottom: 1vw;
-                font-size: 3.5vw;
+                font-size: $s1024-t;
             }
             &__content{
-                font-size: 2vw;
+                font-size: $s1024-c;
                 margin-top: 1.5vw;
                 margin-bottom: 1.5vw;
             }
@@ -354,7 +388,7 @@
     }
     .content-list{
         &__element{
-            font-size: 1.25vw;
+            font-size: $s1024-c;
             margin-top: 1.5vw;
             text-align: left;
         }
@@ -362,30 +396,35 @@
     .post{
         width: 50vw;
         &__title{
-            font-size: 4vw;
+            font-size: $s1024-pt;
         }
         &__date{
-            font-size: 1.25vw;
+            font-size: $s1024-pc;
         }
         &__description{
-            font-size: 1.25vw;
+            font-size: $s1024-pc;
         }
     }
     .highlight{
         &--purple{
-            font-size: 1.25vw;
+            font-size: $s1024-c;
         }
     }
 }
+
+//===================================================//
+//                      1600px                      //
+//=================================================//
+
 @media(min-width:1600px){
     .section{
         padding: 3vw;
         &__title{
             margin-bottom: 2vw;
-            font-size: 4vw;
+            font-size: $s1600-t;
         }
         &__content{
-            font-size: .85vw;
+            font-size: $s1600-c;
             margin-top: 1vw;
             margin-bottom: 1vw;
             &--links{
@@ -415,10 +454,10 @@
         .section{
             &__title{
                 margin-bottom: .75vw;
-                font-size: 2.5vw;
+                font-size: $s1600-t;
             }
             &__content{
-                font-size: 1.25vw;
+                font-size: $s1600-c;
                 margin-top: 1vw;
                 margin-bottom: 1vw;
             }
@@ -437,7 +476,7 @@
     }
     .content-list{
         &__element{
-            font-size: .85vw;
+            font-size: $s1600-c;
             margin-top: .5vw;
         }
     }
@@ -445,18 +484,18 @@
         padding: 2vw;
         width: 50vw;
         &__title{
-            font-size: 3vw;
+            font-size: $s1600-pt;
         }
         &__date{
-            font-size: .85vw;
+            font-size: $s1600-pc;
         }
         &__description{
-            font-size: .85vw;
+            font-size: $s1600-pc;
         }
     }
     .highlight{
         &--purple{
-            font-size: .85vw;
+            font-size: $s1600-c;
         }
     }
 }

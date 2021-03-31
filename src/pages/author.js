@@ -14,13 +14,13 @@ const about = ({ data }) => {
                     <h2 className="section__title">
                         Hey, jestem Damian!
                 </h2>
+                    <Img className="section__image" fluid={data.personalPhoto.childImageSharp.fluid} alt='Zdjecie Damiana' />
                     <p className="section__content">
                         Kim jestem może zapytasz? Chcąc najłatwiej i&nbsp;najprościej to&nbsp;opisać,
                         jestem początkującym web-developerem (tak całkowicie początkującym),
                         który lubi projektować UI, tworzyć grafikę i&nbsp;łączyć te dwie rzecz
                         w&nbsp;jedną całość.
                 </p>
-                    <Img className="section__image" fluid={data.personalPhoto.childImageSharp.fluid} alt='Zdjecie Damiana' />
                     <p className="section__content">
                         Z takich bardziej ogólnych rzeczy to&nbsp;uwielbiam gry planszowe, gry karciane
                         (Magic The Gathering na&nbsp;zawsze w&nbsp;serduszku), a&nbsp;także gry komputerowe.

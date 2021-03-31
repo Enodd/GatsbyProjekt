@@ -1,0 +1,52 @@
+@import "../../styles/mixins/mixins.scss";
+@import "../../styles/variables/variables.scss";
+
+.blog {
+    width: 80vw;
+    margin: auto;    
+    margin-top: 4vw;
+    &__title{
+        font-family: $sans;
+        font-size: $ps-t;
+        @include gradientHighlight();
+        margin-bottom: 2.5vw;
+    }
+    &__date{
+        font-size: $ps-c;
+        font-style: italic;
+        border-bottom: 1px $dark solid;
+        padding-bottom: 1.5vw;
+    }
+    &__content{
+        margin-top: 4vw;
+    //markdown file styling
+    }
+}
+.article{
+    @include simpleflex(column, center, center);
+    h1,h2,h3,h4,h5,h6{
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+        font-family: $sans;
+        @include gradientHighlight();
+        text-align: center;
+    }
+    h2{
+        font-size: $ps-t;
+    }
+    h3{
+        font-size: 6vw;
+    }
+    h4{
+        font-size: 5vw;
+    }
+    li{
+        font-size: $ps-c;
+    }
+    p {
+        font-family: $serif;
+        font-size: $ps-c;
+        margin-top: 1.75vw;
+        margin-bottom: 1.75vw;
+    }
+}
