@@ -41,6 +41,13 @@ banner: "./banner.png"
 > * <a href="#post3">Co to jest Serverless Rendering?</a>
 > * <a href="#post4">Wady i zalety Gatsby.js</a>
 
+
+
+Czym jest Gatsby.js? Co jest Serverless Rendering?  
+Czym są frameworki i co takiego przyniósł Gatsby.js?  
+Jakie są jego wady, a jakie zalety?  
+Narasta wiele pytań, na których część odpowiemy w tym artykule.
+
 <h2 id="post1">To czym jest ten Gatsby?</h2>
 
 Gatsby.js jest to framework z rodziny frameworków działających na podstawie React'a  
