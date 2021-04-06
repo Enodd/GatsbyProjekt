@@ -5,6 +5,15 @@ updatedate: "2021-04-04"
 description: "Gatsby.js jest framework, którego instalacja jak i konfiguracja nie jest skomplikowana. Dostępny jest na każdej platformie, niezależnie od tego czy to linux, windows czy macOS."
 id: "2"
 ---
+
+<style>
+    .inline-code{
+        background-color: #233D4D;
+        color: #fff;
+        display: inline;
+    }
+</style>
+
 <article class='article'>
 
 <blockquote class="article__tableofcontent"> 
@@ -19,7 +28,7 @@ id: "2"
         </li>
         <li>
             <a href="#post2">
-                Przygotowania
+                Instalacja Git'a
             </a>
         </li>
         <li>
@@ -37,7 +46,7 @@ id: "2"
 
 <div class="article__content">
 
-Gatsby.js jest framework, którego instalacja jak i&nbsp;konfiguracja nie jest skomplikowana. Dostępny jest na każdej platformie, niezależnie od tego czy to linux, windows czy macOS.
+Gatsby.js jest framework, którego instalacja jak i&nbsp;konfiguracja nie jest skomplikowana. Dostępny jest na każdej platformie, niezależnie od tego czy to <a href='#linux'>linux</a>, <a href='#windows'>windows</a> czy <a href='#macos'>macOS</a>.
 
 <h2 id="post1">
 	Instalacja Node.js
@@ -45,9 +54,11 @@ Gatsby.js jest framework, którego instalacja jak i&nbsp;konfiguracja nie jest s
 
 Node.js jest środowiskiem, które umożliwia uruchamianie kodu Javascript poza przeglądarką. Gatsby jest zbudowany w oparciu na Node.js. Chcąc tworzyć aplikacje webowe przy użyciu Gatsbiego potrzebna nam będzie najnowsza wersja Node.js.
 
-##### Instalacja na Linux'ie
+<h5 id='linux'>
+    Instalacja na Linux'ie
+</h5>
 
-Ze względu na szeroki zakres dystrybucji, które można wybrać, przedstawię proces instalacji z&nbsp;podziałem, który jest widoczny w&nbsp;<a href="https://www.gatsbyjs.com/docs/tutorial/part-zero/">dokumentacji</a>. 
+Ze względu na szeroki zakres dystrybucji, które można wybrać, przedstawię proces instalacji z&nbsp;podziałem, który jest widoczny w&nbsp;[dokumentacji](https://www.gatsbyjs.com/docs/tutorial/part-zero). 
 
 <ul>
     <li>
@@ -90,13 +101,18 @@ Ze względu na szeroki zakres dystrybucji, które można wybrać, przedstawię p
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
     ```
 
-4. Następnie aktualizujemy nvm do najnowszej wersji:
+
+4. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm. W przypadku, gdyby wyświetlał nam się błąd, należy użyć polecenia <code class='inline-code'>source ~/.nvm/nvm.sh</code>.
+
+    ```Shell
+    nvm --version
+    ```
+
+5. Następnie aktualizujemy nvm do najnowszej wersji:
 
     ```Shell
     nvm install node
     ```
-
-5. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm. W przypadku
 
 <h5 id="list2">
    Arch, Manjaro i inne dytrybucje oparte o&nbsp;pacman
@@ -120,7 +136,47 @@ Ze względu na szeroki zakres dystrybucji, które można wybrać, przedstawię p
    sudo pacman -S grep awk tar
    ```
 
-4. Lorem ipsum
+4. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm. W przypadku, gdyby wyświetlał nam się błąd, należy użyć polecenia <code class='inline-code'>source ~/.nvm/nvm.sh</code>.
+
+    ```Shell
+    nvm --version
+    ```
+
+5. Następnie aktualizujemy nvm do najnowszej wersji:
+
+    ```Shell
+    nvm install node
+    ```
+
+<h5 id="list3">
+    Ferdora, RedHat i inne dystrybucje bazujące na&nbsp;dnf
+</h5>
+
+1. Te dystrybucje domyślnie mają zainstalowanego curl, więc wystarczy instalacja nvm:
+
+   ```shell
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+   ```
+2. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm.
+    
+    ```Shell
+    nvm --version
+    ```
+
+<h5 id='windows'>
+    Instalacja na windowsie
+</h5>
+
+Instalacja Node.js na systemie windows jest znacznie prostsza niż na linuie, lub macOS. Wystarczy pobrać go z&nbsp;[oficjalnej strony](https://nodejs.org/en/)
+
+
+<h5 id='macos'>
+    Instalacja na macOS
+</h5>
+
+Z informacji, które mamy w&nbsp;dokumentacji, instalację zaleca się w&nbsp;oparciu o&nbsp;[Homebrew](https://brew.sh) -&nbsp;menagera brakujących pakietów dla macOS lub linux.
+
+
 
 </div>
 
