@@ -8,7 +8,7 @@
     &__title{
         font-family: $sans;
         font-size: $ps-t;
-        @include gradientHighlight();
+        @include gradientHighlight($accent1, $accent2);
         margin-bottom: 2.5vw;
     }
     &__date{
@@ -19,16 +19,51 @@
     }
     &__content{
         margin-top: 4vw;
-    //markdown file styling
+        margin-bottom: 4vw;
+    }
+    &__link{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        &--prev{
+            color: $main-color;
+            padding: 1vw;
+            font-size: $ps-c;
+            font-family: $sans;
+        }
+        &--next{
+            color: $main-color;
+            padding: 1vw;
+            left: 100%;
+            position: sticky;
+            font-size: $ps-c;
+            font-family: $sans;
+        }
     }
 }
 .article{
-    @include simpleflex(column, center, center);
+    width:100%;
+    position: relative;
+    @include simpleflex(column);
+    &__content{
+        position: relative;
+        @include simpleflex(column, center, center);
+        width: 100%;
+        *{
+            width:100%;
+        }
+    }
+    &__tableofcontent{
+        ul{
+            border-left: 3px $main-color solid;
+            padding-left: 20px;
+        }
+        width: 100%;
+    }
     h1,h2,h3,h4,h5,h6{
         margin-top: 2.5vw;
         margin-bottom: 2.5vw;
         font-family: $sans;
-        @include gradientHighlight();
+        @include gradientHighlight($accent1, $accent2);
         text-align: center;
     }
     h2{
@@ -40,13 +75,415 @@
     h4{
         font-size: 5vw;
     }
+    h5{
+        font-size: 4.5vw;
+    }
     li{
         font-size: $ps-c;
+        font-family: $serif;
+        margin: .85vw 0vw .85vw 0vw;
     }
     p {
         font-family: $serif;
         font-size: $ps-c;
-        margin-top: 1.75vw;
-        margin-bottom: 1.75vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
     }
+    pre{
+        height: 14vw;
+        overflow-x: auto;
+        background-color: $dark;
+        border-radius: 4vw;
+        position: relative;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    code{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: $code;
+        font-size: $ps-c;
+        color: $light;
+        font-weight: 600;
+        padding-left: 2vw;
+    }
+    ul{
+        li{
+            list-style: none;
+            color: $dark;
+            a{
+                color: $main-color;
+                font-size: $ps-c;
+                font-weight: 600;
+            }
+        }
+    }
+}
+@media (min-width: 540px){
+
+.blog {
+    width: 80vw;  
+    margin-top: 4vw;
+    &__title{
+        font-size: $s540-t;
+        margin-bottom: 2.5vw;
+    }
+    &__date{
+        font-size: $s540-c;
+        padding-bottom: 1.5vw;
+    }
+    &__content{
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    &__link{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        &--prev{
+            padding: 1vw;
+            font-size: $s540-c;
+        }
+        &--next{
+            padding: 1vw;
+            font-size: $s540-c;
+        }
+    }
+}
+.article{
+    width:100%;
+    position: relative;
+    @include simpleflex(column);
+    &__content{
+        position: relative;
+        @include simpleflex(column, center, center);
+        width: 100%;
+        *{
+            width:100%;
+        }
+    }
+    &__tableofcontent{
+        width: 100%;
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+        text-align: center;
+    }
+    h2{
+        font-size: $s540-t;
+    }
+    h3{
+        font-size: 5vw;
+    }
+    h4{
+        font-size: 4vw;
+    }
+    h5{
+        font-size: 4vw;
+    }
+    li{
+        font-size: $s540-c;
+    }
+    p {
+        font-size: $s540-c;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    pre{
+        height: 14vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    code{
+        padding-left: 5vw;
+        font-size: $s540-c;
+    }
+    ul{
+        li{
+            a{
+                font-size: $s540-c;
+                font-weight: 600;
+            }
+        }
+    }
+}
+}
+@media (min-width: 720px){
+
+.blog {
+    width: 80vw;  
+    margin-top: 4vw;
+    &__title{
+        font-size: $s720-t;
+        margin-bottom: 2.5vw;
+    }
+    &__date{
+        font-size: $s720-c;
+        padding-bottom: 1.5vw;
+    }
+    &__content{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    &__link{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        &--prev{
+            padding: 1vw;
+            font-size: $s720-c;
+        }
+        &--next{
+            padding: 1vw;
+            font-size: $s720-c;
+        }
+    }
+}
+.article{
+    width:100%;
+    position: relative;
+    @include simpleflex(row-reverse, space-between);
+    &__content{
+        position: relative;
+        @include simpleflex(column, center, center);
+        width:50vw; 
+        *{
+            width:100%;
+        }
+    }
+    &__tableofcontent{
+        width: 25vw;
+        right: 10vw;
+        top: 10%;
+        position: sticky;
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+        text-align: left;
+    }
+    h2{
+        font-size: $s720-t;
+    }
+    h3{
+        font-size: 4.5vw;
+    }
+    h4{
+        font-size: 3.5vw;
+    }
+    h5{
+        font-size: 3vw;
+    }
+    li{
+        font-size: $s720-c;
+    }
+    p {
+        font-size: $s720-c;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    pre{
+        height: 10vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    code{
+        padding-left: 3vw;
+        font-size: $s720-c;
+    }
+    ul{
+        li{
+            a{
+                font-size: $s720-c;
+                font-weight: 600;
+            }
+        }
+    }
+}
+}
+@media (min-width: 1024px){
+
+.blog {
+    width: 80vw;  
+    margin-top: 4vw;
+    &__title{
+        font-size: $s1024-t;
+        margin-bottom: 2.5vw;
+    }
+    &__date{
+        font-size: $s1024-c;
+        padding-bottom: 1.5vw;
+    }
+    &__content{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    &__link{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        &--prev{
+            padding: 1vw;
+            font-size: $s1024-c;
+        }
+        &--next{
+            padding: 1vw;
+            font-size: $s1024-c;
+        }
+    }
+}
+.article{
+    width:100%;
+    position: relative;
+    @include simpleflex(row-reverse, space-between);
+    &__content{
+        position: relative;
+        @include simpleflex(column, center, center);
+        width:60vw; 
+        *{
+            width:100%;
+        }
+    }
+    &__tableofcontent{
+        width: 20vw;
+        margin-left: 3vw;
+        left: 100%;
+        top: 10%;
+        position: sticky;
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin-top: 2.5vw;
+        margin-bottom: 2.5vw;
+        text-align: left;
+    }
+    h2{
+        font-size: $s1024-t;
+    }
+    h3{
+        font-size: 3.5vw;
+    }
+    h4{
+        font-size: 3vw;
+    }
+    h5{
+        font-size: 2.5vw;
+    }
+    li{
+        font-size: $s1024-c;
+    }
+    p {
+        font-size: $s1024-c;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    pre{
+        height: 7vw;
+        border-radius: 2vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    code{
+        padding-left: 3vw;
+        font-size: $s1024-c;
+    }
+    ul{
+        li{
+            a{
+                font-size: $s1024-c;
+                font-weight: 600;
+            }
+        }
+    }
+}
+}
+@media (min-width: 1600px){
+
+.blog {
+    width: 80vw;  
+    margin-top: 4vw;
+    &__title{
+        font-size: $s1600-t;
+        margin-bottom: 2.5vw;
+    }
+    &__date{
+        font-size: $s1600-c;
+        padding-bottom: 1.5vw;
+    }
+    &__content{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    &__link{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        &--prev{
+            padding: 1vw;
+            font-size: $s1024-c;
+        }
+        &--next{
+            padding: 1vw;
+            font-size: $s1024-c;
+        }
+    }
+}
+.article{
+    width:100%;
+    position: relative;
+    &__content{
+        position: relative;
+        @include simpleflex(column, center, center);
+        width:50vw; 
+        *{
+            width:100%;
+        }
+    }
+    &__tableofcontent{
+        margin-left: 3vw;
+        left: 100%;
+        top: 13%;
+        position: sticky;
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+        text-align: left;
+    }
+    h2{
+        font-size: $s1600-t;
+    }
+    h3{
+        font-size: 2vw;
+    }
+    h4{
+        font-size: 1.5vw;
+    }
+    h5{
+        font-size: 1vw;
+    }
+    li{
+        font-size: $s1600-c;
+    }
+    p {
+        font-size: $s1600-c;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+    pre{
+        height: 5vw;
+        border-radius: 2vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+    code{
+        padding-left: 3vw;
+        font-size: $s1600-c;
+    }
+    ul{
+        li{
+            a{
+                font-size: $s1600-c;
+                font-weight: 600;
+            }
+        }
+    }
+}
 }

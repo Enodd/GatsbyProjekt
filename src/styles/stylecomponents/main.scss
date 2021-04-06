@@ -33,7 +33,7 @@ $s1600-pc: .85vw;
     position: relative;
     @include simpleflex(column, center, center);
     &__title{
-        @include gradientHighlight();
+        @include gradientHighlight($accent1, $accent2);
         font-family: $serif;
         margin-bottom: 1vw;
         font-size: $ps-t;
@@ -62,7 +62,7 @@ $s1600-pc: .85vw;
     }
     .section{
         &__title{
-            @include gradientHighlight();
+            @include gradientHighlight($accent1, $accent2);
             font-family: $serif;
             margin-bottom: 1vw;
             font-size: $ps-t;

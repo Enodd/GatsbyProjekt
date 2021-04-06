@@ -47,20 +47,22 @@ const Blog = (props) => {
                 <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} className="blog__content" >
 
                 </div>
-                {
-                    prev && (
-                        <Link className="blog__link--prev" to={prev.url}>
-                            {prev.title}
-                        </Link>
-                    )
-                }
-                {
-                    next && (
-                        <Link className="blog__link--next" to={next.url}>
-                            {next.title}
-                        </Link>
-                    )
-                }
+                <div className="blog__link">
+                    {
+                        prev && (
+                            <Link className="blog__link--prev" to={prev.url}>
+                                <i class="fas fa-chevron-left"></i>   {prev.title}
+                            </Link>
+                        )
+                    }
+                    {
+                        next && (
+                            <Link className="blog__link--next" to={next.url}>
+                                {next.title}   <i class="fas fa-chevron-right"></i>
+                            </Link>
+                        )
+                    }
+                </div>
             </div>
         </Layout>
     )

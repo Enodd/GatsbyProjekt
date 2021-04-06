@@ -19,29 +19,51 @@ banner: "./banner.png"
         margin: 2vw;
     }
     .img1{
-        width: 80vw;
+        width: 80%;
     }
     .img2 {
-        width: 80vw;
+        width: 80%;
     }
     @media (min-width:540px){
         .img1{
-            width: 60vw;
+            width: 60%;
         }
         .img2 {
-            width: 60vw;
+            width: 60%;
         }
     }
 </style>
 <article class="article">
 
-> ### Spis treści 
-> * <a href="#post1">To czym jest ten Gatsby?</a>
-> * <a href="#post2">Do czego można go wykorzystać?</a>
-> * <a href="#post3">Co to jest Serverless Rendering?</a>
-> * <a href="#post4">Wady i zalety Gatsby.js</a>
+<blockquote class="article__tableofcontent">
+<h3>
+    	Spis treści
+    </h3>
+    <ul>
+        <li>
+            <a href="#post1">
+                To czym jest ten Gatsby?
+            </a>
+        </li>
+        <li>
+            <a href="#post2">
+                Do czego można go wykorzystać?
+            </a>
+        </li>
+        <li>
+            <a href="#post3">
+                Co to jest Serverless Rendering?
+            </a>
+        </li>
+        <li>
+            <a href="#post4">
+                Wady i zalety Gatsby.js
+            </a>
+        </li>
+    </ul>
+</blockquote>
 
-
+<div class="article__content">
 
 Czym jest Gatsby.js? Co jest Serverless Rendering?  
 Czym są frameworki i co takiego przyniósł Gatsby.js?  
@@ -51,7 +73,7 @@ Narasta wiele pytań, na których część odpowiemy w tym artykule.
 <h2 id="post1">To czym jest ten Gatsby?</h2>
 
 Gatsby.js jest to framework z rodziny frameworków działających na podstawie React'a  
-oraz GraphQL - sposobu komunikacji z serwerem API. Chcąc uzyskać szybkie i&nbsp;poprawne pozycjonowanie strony wymaga od nas czystego HTML'a - bez różnych dodatkowych znaczników jakie można znaleźć np. w React'cie. Korzystając z Gatsby.js można uzyskać czysty plik HTML bez pozyskiwania dodatkowych plików.
+oraz GraphQL - sposobu komunikacji z serwerem API. Chcąc uzyskać szybkie i&nbsp;poprawne pozycjonowanie strony wymaga od nas czystego HTML'a - bez różnych dodatkowych znaczników jakie można znaleźć np.&nbsp;w&nbsp;React'cie. Korzystając z Gatsby.js można uzyskać czysty plik HTML bez pozyskiwania dodatkowych plików.
 
 <h2 id="post2">Do czego można go wykorzystać?</h2>
 
@@ -93,6 +115,9 @@ Jako, że Gatsby.js nie jest tworem idealnym, ma także swoje minusy. Można si�
 
 <h2 id="post5">Czy warto wykorzystać Gatsby.js w&nbsp;swoich projektach?</h2>
 
-Zdaniem niezależnego autora - tak, to&nbsp;samo tyczy się pozostałych programistów, którzy wykorzystują  Gatsby.js niezależnie od&nbsp;tego czy tworzą mniejsze lub większe witryny. Jest to dobre rozwiązanie dla osób, które cenią szybkość działania, dopasowanie do&nbsp;wymogów SEO oraz bezpieczeństwo.   
+Zdaniem niezależnego autora - tak, to&nbsp;samo tyczy się pozostałych programistów, którzy wykorzystują  Gatsby.js niezależnie od&nbsp;tego czy tworzą mniejsze lub większe witryny. Jest to dobre rozwiązanie dla osób, które cenią szybkość działania, dopasowanie do&nbsp;wymogów SEO oraz&nbsp;bezpieczeństwo.   
 Poza tym dzięki licencji open source, jest on darmowy, więc czemu nie spróbować swoich sił?
+
+</div>
+
 </article>
