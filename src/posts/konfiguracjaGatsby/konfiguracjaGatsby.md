@@ -216,7 +216,37 @@ Z informacji, które mamy w&nbsp;dokumentacji, instalację zaleca się w&nbsp;op
     Instalacja Git'a
 </h2>
 
+Czym jest git?   
+Chcąc to określić w najprosztszej możliwej formie, jest to narzędzie/oprogramowanie, które umożliwa kontrolowanie wersji naszego oprogramowania. Wykorzystywane są do tego tzw.&nbsp;migawki, które stanowią "obraz" naszego projektu w&nbsp;momencie zapisu.   
+Na co to się przekłada? Umożliwia nam cofanie się do poprzednich wersji kodu, a&nbsp;także na porównywanie wykonanych zmian pomiędzy wersjami.
 
+Na czym polega cały proces instalacji? Niezależnie od systemu, z którego korzystamy elementem wyjściowym będzie [oficjalna strona git'a](https://git-scm.com/downloads), na której znajdują się instrukcje dotyczące procesu instalacji na naszym systemie.
+
+###### Konfiguracja Git'a 
+
+Pierwszym krokiem po instalacji Git'a jest ustawienie nazwy użytkownika i&nbsp;mail'a:
+
+```
+git config --global user.name "Nazwa Używkonika"
+git config --global user.email przykladowymail@example.com
+```
+
+Dlaczego jest to ważne? Jest to ważne, z tego powodu, że każda utworzona migawka używa tych informacji i jest z nimi związana. Przykładowo w sytuacji, gdy będziemy chcieli przesłać te migawki na github'a, nie będziemy musieli, za każdym razem ich podawać.
+
+<h2 id="post3">
+Instalacja Gatsby CLI
+</h2>
+
+Teraz można przejść bezpośrednio do najważniejszego elementu tego poradnika - instalacji Gatbsiego. Proces ten jest bardzo prosty, wystarczy go zainstalować przy pomocy jednego polecenia:
+
+    ```Shell
+    npm install -g gatsby-cli
+    ```
+
+> Npm jest to menadżer pakietów JavaScript, który został zainstalowany wraz z&nbsp;Node.js.
+
+I udało się! Jesteśmy gotowi do tworzenia naszej własnej strony opartej na **Gatbsy.js** .  
+W następnych artykułach będzie opisanych proces tworzenie tej strony z&nbsp;osoby, która po raz pierwszy korzysta z&nbsp;jakiekolwiek frameworka. Nie ma czego się obawiać, jest tylko to co trzeba zaprogramować.
 
 </div>
 

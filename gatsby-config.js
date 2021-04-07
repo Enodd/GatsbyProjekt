@@ -56,6 +56,40 @@ module.exports = {
           },
         ]
       }
+    },
+    {
+      resolve: 'gatsby-plugin-local-search',
+      options: {
+        name: 'pages',
+        engine: 'flexsearch',
+        query: `
+        query{
+          allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC}){
+            nodes{
+              excerpt
+              fields{
+                slug
+              }
+              frontmatter{
+                date(formatString: "DD.MM.YYYY")
+                title
+                description
+              }
+            }
+          }
+        }
+        `,
+        ref: 'slug',
+        index: ['title', 'excerpt', 'description'],
+        store: ['title', 'date', 'excerpt', 'description', 'slug'],
+        normalizer: ({ data }) => data.allMarkdownRemark.nodes.map(node => ({
+          title: node.frontmatter.title,
+          date: node.frontmatter.date,
+          excerpt: node.excerpt,
+          description: node.frontmatter.description,
+          slug: node.fields.slug,
+        }))
+      }
     }
 
   ],
