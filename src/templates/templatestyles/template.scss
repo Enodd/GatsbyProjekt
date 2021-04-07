@@ -18,12 +18,11 @@
         padding-bottom: 1.5vw;
     }
     &__content{
-        margin-top: 4vw;
-        margin-bottom: 4vw;
+        font-family: $serif;
+        margin: 4vw 0px;
     }
     &__link{
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
         &--prev{
             color: $main-color;
             padding: 1vw;
@@ -59,9 +58,8 @@
         }
         width: 100%;
     }
-    h1,h2,h3,h4,h5,h6{
-        margin-top: 2.5vw;
-        margin-bottom: 2.5vw;
+    h1,h2,h3,h4,h5{
+        margin: 2.5vw 0px;
         font-family: $sans;
         @include gradientHighlight($accent1, $accent2);
         text-align: center;
@@ -78,16 +76,22 @@
     h5{
         font-size: 4.5vw;
     }
+    h6{
+        margin: 1.5vw 0px .25vw;
+        font-size: 4vw;
+        font-family: $sans;
+        color: $dark;
+        text-align: center;
+    }
     li{
         font-size: $ps-c;
         font-family: $serif;
-        margin: .85vw 0vw .85vw 0vw;
+        margin: .85vw 0vw;
     }
     p {
         font-family: $serif;
         font-size: $ps-c;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin: 2vw 0px;
     }
     pre{
         height: 14vw;
@@ -95,8 +99,7 @@
         background-color: $dark;
         border-radius: 4vw;
         position: relative;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
     }
     code{
         position: absolute;
@@ -134,12 +137,10 @@
         padding-bottom: 1.5vw;
     }
     &__content{
-        margin-top: 4vw;
-        margin-bottom: 4vw;
+        margin: 4vw 0px;
     }
     &__link{
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
         &--prev{
             padding: 1vw;
             font-size: $s540-c;
@@ -165,9 +166,8 @@
     &__tableofcontent{
         width: 100%;
     }
-    h1,h2,h3,h4,h5,h6{
-        margin-top: 2.5vw;
-        margin-bottom: 2.5vw;
+    h1,h2,h3,h4,h5{
+        margin: 2.5vw 0px;
         text-align: center;
     }
     h2{
@@ -182,18 +182,19 @@
     h5{
         font-size: 4vw;
     }
+    h6{
+        font-size: 3.5vw;
+    }
     li{
         font-size: $s540-c;
     }
     p {
         font-size: $s540-c;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin: 2vw 0px;
     }
     pre{
         height: 14vw;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
     }
     code{
         padding-left: 5vw;
@@ -223,12 +224,10 @@
         padding-bottom: 1.5vw;
     }
     &__content{
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
     }
     &__link{
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
         &--prev{
             padding: 1vw;
             font-size: $s720-c;
@@ -242,24 +241,20 @@
 .article{
     width:100%;
     position: relative;
-    @include simpleflex(row-reverse, space-between);
+    @include simpleflex(column);
     &__content{
         position: relative;
         @include simpleflex(column, center, center);
-        width:50vw; 
+        width:100%;
         *{
             width:100%;
         }
     }
     &__tableofcontent{
-        width: 25vw;
-        right: 10vw;
-        top: 10%;
-        position: sticky;
+        width: 100%;
     }
-    h1,h2,h3,h4,h5,h6{
-        margin-top: 2.5vw;
-        margin-bottom: 2.5vw;
+    h1,h2,h3,h4,h5{
+        margin: 2.5vw 0px;
         text-align: left;
     }
     h2{
@@ -274,18 +269,20 @@
     h5{
         font-size: 3vw;
     }
+    h6{
+        font-size: 2vw;
+        text-align: left;
+    }
     li{
         font-size: $s720-c;
     }
     p {
         font-size: $s720-c;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin: 2vw 0px;
     }
     pre{
         height: 10vw;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
     }
     code{
         padding-left: 3vw;
@@ -315,12 +312,10 @@
         padding-bottom: 1.5vw;
     }
     &__content{
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
     }
     &__link{
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
         &--prev{
             padding: 1vw;
             font-size: $s1024-c;
@@ -350,9 +345,8 @@
         top: 10%;
         position: sticky;
     }
-    h1,h2,h3,h4,h5,h6{
-        margin-top: 2.5vw;
-        margin-bottom: 2.5vw;
+    h1,h2,h3,h4,h5{
+        margin: 2.5vw 0px;
         text-align: left;
     }
     h2{
@@ -367,19 +361,20 @@
     h5{
         font-size: 2.5vw;
     }
+    h6{
+        font-size: 2vw;
+    }
     li{
         font-size: $s1024-c;
     }
     p {
         font-size: $s1024-c;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin: 2vw 0px;
     }
     pre{
         height: 7vw;
         border-radius: 2vw;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 2vw 0px;
     }
     code{
         padding-left: 3vw;
@@ -402,19 +397,17 @@
     margin-top: 4vw;
     &__title{
         font-size: $s1600-t;
-        margin-bottom: 2.5vw;
+        margin-bottom: 1.5vw;
     }
     &__date{
         font-size: $s1600-c;
         padding-bottom: 1.5vw;
     }
     &__content{
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
     }
     &__link{
-        margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin: 3vw 0px;
         &--prev{
             padding: 1vw;
             font-size: $s1024-c;
@@ -442,9 +435,8 @@
         top: 13%;
         position: sticky;
     }
-    h1,h2,h3,h4,h5,h6{
-        margin-top: 1.5vw;
-        margin-bottom: 1.5vw;
+    h1,h2,h3,h4,h5{
+        margin: 1.25vw 0px .85vw;
         text-align: left;
     }
     h2{
@@ -459,19 +451,20 @@
     h5{
         font-size: 1vw;
     }
+    h6{
+        font-size: 1vw;
+    }
     li{
         font-size: $s1600-c;
     }
     p {
         font-size: $s1600-c;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
+        margin: .85vw 0px;
     }
     pre{
-        height: 5vw;
+        height: 4vw;
         border-radius: 2vw;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
+        margin: 1.25vw 0px;
     }
     code{
         padding-left: 3vw;

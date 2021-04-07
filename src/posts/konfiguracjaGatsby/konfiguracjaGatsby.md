@@ -8,9 +8,11 @@ id: "2"
 
 <style>
     .inline-code{
-        background-color: #233D4D;
-        color: #fff;
-        display: inline;
+        background-color: #233D4D; 
+        color: #fff; 
+        font-family: 'Source code pro', monospace; 
+        display: inline; 
+        padding: .05vw;
     }
 </style>
 
@@ -62,17 +64,17 @@ Ze względu na szeroki zakres dystrybucji, które można wybrać, przedstawię p
 
 <ul>
     <li>
-    	<a href="list1">
+    	<a href="#list1">
             Debian, ubuntu i inne dystrybucje bazujące na&nbsp;apt
         </a>
     </li>
     <li>
-    	<a href="list2">
+    	<a href="#list2">
             Arch, Manjaro i inne dytrybucje oparte o&nbsp;pacman
         </a>
     </li>
     <li>
-    	<a href="list3">
+    	<a href="#list3">
         	Ferdora, RedHat i inne dystrybucje bazujące na&nbsp;dnf
         </a>
     </li>
@@ -89,7 +91,7 @@ Ze względu na szeroki zakres dystrybucji, które można wybrać, przedstawię p
     sudo apt -y upgrade
     ```
 
-2. Następnie instalujemy curl - program umożliwiający przenoszenie danych i pobieranie dodatkowych zależności:
+2. Następnie instalujemy curl - program umożliwiający przenoszenie danych i&nbsp;pobieranie dodatkowych zależności:
 
     ```Shell
     sudo apt-get install curl
@@ -102,7 +104,7 @@ Ze względu na szeroki zakres dystrybucji, które można wybrać, przedstawię p
     ```
 
 
-4. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm. W przypadku, gdyby wyświetlał nam się błąd, należy użyć polecenia <code class='inline-code'>source ~/.nvm/nvm.sh</code>.
+4. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm. W&nbsp;przypadku, gdyby wyświetlał nam się błąd, należy użyć polecenia <span class="inline-code">source ~/.nvm/nvm.sh</span>.
 
     ```Shell
     nvm --version
@@ -136,7 +138,7 @@ Ze względu na szeroki zakres dystrybucji, które można wybrać, przedstawię p
    sudo pacman -S grep awk tar
    ```
 
-4. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm. W przypadku, gdyby wyświetlał nam się błąd, należy użyć polecenia <code class='inline-code'>source ~/.nvm/nvm.sh</code>.
+4. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm. W&nbsp;przypadku, gdyby wyświetlał nam się błąd, należy użyć polecenia <span class='inline-code'>source ~/.nvm/nvm.sh</span>.
 
     ```Shell
     nvm --version
@@ -174,7 +176,45 @@ Instalacja Node.js na systemie windows jest znacznie prostsza niż na linuie, lu
     Instalacja na macOS
 </h5>
 
+###### Instalacja Homebrew
+
 Z informacji, które mamy w&nbsp;dokumentacji, instalację zaleca się w&nbsp;oparciu o&nbsp;[Homebrew](https://brew.sh) -&nbsp;menagera brakujących pakietów dla macOS lub linux.
+
+1. Pierwszą czynnością, jaką należy zrobić jest to zainstalować [Homebrew zgodnie z&nbsp;instrukcjami](https://docs.brew.sh/Installation).
+
+2. Następnie w terminalu sprawdzamy czy całość jest poprawnie zainstalowana. Najprościej jest sprawdzić wersję Homebrew:
+
+    ```Shell
+    brew -v
+    ```
+
+###### Instalacja Xcode Command Line Tools
+
+**Xcode Command Line Tools** to zestaw narzędzi umożliwiających rozpoczęcie procesu tworzenia aplikacji, w oparciu o terminal/wiersz poleceń, na systemie macOS.
+
+1. Chcąc go zainstalować wystarczy wykorzystać jedno polecenie:
+
+    ```Shell
+    xcode-select --install
+    ```
+
+> W przypadku, gdy zakończy się to niepowodzeniem, program można pobrać bezpośrednio ze&nbsp;[strony apple](https://developer.apple.com/download/more/) po zalogowaniu się na koncie deweloperskim Apple. 
+
+2. Następnie akceptujemy licencję oprogramowania.
+
+###### Instalacja Node.js
+
+1. W terminalu/wierszu poleceń instalujemy Node.js przy użyciu wcześniej zainstalowanego Homebrew:
+
+    ```Shell
+    brew install node
+    ```
+
+> Jeżeli nie chcesz instalować przy użyciu Homebrew, możesz pobrać i&nbsp;zainstalować najnowszą wersję Node.js z&nbsp;[oficjalnej strony](https://nodejs.org/en/).
+
+<h2 id="post2">
+    Instalacja Git'a
+</h2>
 
 
 
