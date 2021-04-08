@@ -1,0 +1,84 @@
+@import '../mixins/mixins.scss';
+@import '../variables/variables.scss';
+
+.search-bar{
+    @include simpleflex(column, center, center);
+    margin: .75vw 0px 2vw;
+    &__label{
+        color: $dark;
+        text-shadow: 2px 0px $main-color;
+        font-size: 5vw;
+        font-weight: 600;
+        font-family: $serif;
+        padding: 1.5vw 0px;
+    }
+    &__input{
+        background-color: darken($light, 10%);
+        border-radius: 50vw;
+        font-size: $ps-c;
+        font-family: $sans;
+        width: 100%;
+        padding: .6em;
+    }
+}
+
+@media (min-width: 540px) {
+    .search-bar{
+        margin: .75vw 0px 2vw;
+        &__label{
+            font-size: 4vw;
+            padding: 1.5vw 0px;
+        }
+        &__input{
+            font-size: $s540-c;
+            padding: .6em;
+        }
+    }
+}
+@media (min-width: 720px) {
+    .search-bar{
+        align-items: flex-start;
+        margin: .75vw 0px 2vw;
+        &__label{
+            font-size: 3.75vw;
+            padding: 1.5vw 0px;
+        }
+        &__input{
+            font-size: $s720-c;
+            padding: .6em;
+            width: 90%;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .search-bar{
+        align-items: flex-start;
+        justify-content: center;
+        margin: .75vw 1vw 2vw;
+        &__label{
+            font-size: 2.25vw;
+            padding: 1.5vw 0px;
+        }
+        &__input{
+            font-size: $s1024-c;
+            padding: .6em;
+            width: 90%;
+        }
+    }
+}
+@media (min-width: 1600px) {
+    .search-bar{
+        align-items: flex-start;
+        justify-content: center;
+        margin: .75vw 1vw .4vw;
+        &__label{
+            font-size: 1.5vw;
+            padding: .75vw 0px;
+        }
+        &__input{
+            font-size: $s1600-c;
+            padding: .6em;
+            width: 90%;
+        }
+    }
+}

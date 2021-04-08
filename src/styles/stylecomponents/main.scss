@@ -114,7 +114,6 @@ $s1600-pc: .85vw;
 }
 .post-list{
     @include simpleflex(column);
-    margin: auto;
     text-align: left;
     list-style: none;
     &__element{
@@ -411,10 +410,8 @@ $s1600-pc: .85vw;
         }
     }
     .post-list{
-        @include simpleflex(row, space-between, flex-start);
-        flex-wrap: wrap;
         &__element{
-            width: 40%;
+            width: 100%;
         }
         &--newest{
             .post{
@@ -435,6 +432,9 @@ $s1600-pc: .85vw;
         &--purple{
             font-size: $s1024-c;
         }
+    }
+    .page-navigation{
+        margin:auto;
     }
 }
 
@@ -506,11 +506,6 @@ $s1600-pc: .85vw;
             margin-top: .5vw;
         }
     }
-    .post-list{
-        &__element{
-            width: 30%;
-        }
-    }
     .post{
         width: 100%;
         &__title{
@@ -523,7 +518,7 @@ $s1600-pc: .85vw;
             font-size: $s1600-pc;
         }
         &__link{
-            padding: 2vw;
+            padding: 1.25vw;
         }
     }
     .highlight{

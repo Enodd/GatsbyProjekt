@@ -239,9 +239,9 @@ Instalacja Gatsby CLI
 
 Teraz można przejść bezpośrednio do najważniejszego elementu tego poradnika - instalacji Gatbsiego. Proces ten jest bardzo prosty, wystarczy go zainstalować przy pomocy jednego polecenia:
 
-    ```Shell
-    npm install -g gatsby-cli
-    ```
+```Shell
+npm install -g gatsby-cli
+```
 
 > Npm jest to menadżer pakietów JavaScript, który został zainstalowany wraz z&nbsp;Node.js.
 
