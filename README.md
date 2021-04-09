@@ -3,7 +3,7 @@
 - [x] Stworzenie podstawowych komponentów (header, footer, layout)
 - [x] Dodanie responsywności komponentów
 - [x] Dynamiczne tworzenie stron (posty/artykuły)
-- [ ] Uzupełnienie zawartości stron (index; blog; o autorze)
-- [ ]  Wystylizowanie stron + responsywność
+- [x] Uzupełnienie zawartości stron (index; blog; o autorze)
+- [x]  Wystylizowanie stron + responsywność
+- [x] Stylizacja postów
 - [ ] Utworzenie pełno prawnych postów
-- [ ] Stylizacja postów
