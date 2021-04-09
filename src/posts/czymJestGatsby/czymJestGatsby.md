@@ -7,7 +7,6 @@ Czym są frameworki i co takiego przyniósł Gatsby.js?
 Jakie są jego wady, a jakie zalety?  
 Narasta wiele pytań, na których część odpowiemy w tym artykule."
 id: "1"
-banner: "./banner.png"
 
 ---
 <style>

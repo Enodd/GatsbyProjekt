@@ -68,7 +68,7 @@ const Blogpage = ({ location }) => {
 
     // pagination
     const [offset, setOffset] = useState(0);
-    const perPage = 9;
+    const perPage = 4;
 
     useEffect(() => {
         console.log(data.daty.edges.slice(offset * perPage, (offset * perPage) + perPage))

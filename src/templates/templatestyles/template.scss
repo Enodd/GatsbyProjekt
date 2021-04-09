@@ -94,22 +94,33 @@
         margin: 2vw 0px;
     }
     pre{
-        height: 14vw;
+        padding: 2vw;
         overflow-x: auto;
         background-color: $dark;
         border-radius: 4vw;
-        position: relative;
         margin: 3vw 0px;
     }
     code{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
         font-family: $code;
         font-size: $ps-c;
         color: $light;
         font-weight: 600;
-        padding-left: 2vw;
+        text-align: left;
+    }
+    span {
+        color: $main-color;
+        font-family: $code;
+        padding: .05vw;
+        background-color: $dark;
+        font-weight: 600;
+        code {
+            padding: 0px;
+            position: static;
+            color: $main-color;
+            font-size: $ps-c;
+            font-family: $code;   
+            font-weight: 600;
+        }
     }
     ul{
         li{
@@ -193,12 +204,16 @@
         margin: 2vw 0px;
     }
     pre{
-        height: 14vw;
         margin: 3vw 0px;
     }
     code{
         padding-left: 5vw;
         font-size: $s540-c;
+    }
+    span {
+        code {
+            font-size: $s540-c;
+        }
     }
     ul{
         li{
@@ -281,12 +296,16 @@
         margin: 2vw 0px;
     }
     pre{
-        height: 10vw;
         margin: 3vw 0px;
     }
     code{
         padding-left: 3vw;
         font-size: $s720-c;
+    }
+    span {
+        code {
+            font-size: $s720-c;
+        }
     }
     ul{
         li{
@@ -372,13 +391,17 @@
         margin: 2vw 0px;
     }
     pre{
-        height: 7vw;
         border-radius: 2vw;
         margin: 2vw 0px;
     }
     code{
         padding-left: 3vw;
         font-size: $s1024-c;
+    }
+    span {
+        code {
+            font-size: $s1024-c;
+        }
     }
     ul{
         li{
@@ -462,13 +485,17 @@
         margin: .85vw 0px;
     }
     pre{
-        height: 4vw;
         border-radius: 2vw;
         margin: 1.25vw 0px;
     }
     code{
         padding-left: 3vw;
         font-size: $s1600-c;
+    }
+    span {
+        code {
+            font-size: $s1600-c;
+        }
     }
     ul{
         li{

@@ -2,7 +2,7 @@
 @import '../mixins/mixins.scss';
 
 .page-navigation{
-    @include simpleflex(row, center, center);
+    @include simpleflex(row-reverse, center, center);
     &__button{
         text-align: center;
         font-size: $ps-c;

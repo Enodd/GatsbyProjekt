@@ -6,16 +6,6 @@ description: "Gatsby.js jest framework, którego instalacja jak i konfiguracja n
 id: "2"
 ---
 
-<style>
-    .inline-code{
-        background-color: #233D4D; 
-        color: #fff; 
-        font-family: 'Source code pro', monospace; 
-        display: inline; 
-        padding: .05vw;
-    }
-</style>
-
 <article class='article'>
 
 <blockquote class="article__tableofcontent"> 
@@ -35,12 +25,7 @@ id: "2"
         </li>
         <li>
             <a href="#post3">
-                Przygotowania
-            </a>
-        </li>
-        <li>
-            <a href="#post4">
-                Przygotowania
+                Instalacja Gatsby.Js
             </a>
         </li>
     </ul>
@@ -104,7 +89,7 @@ Ze względu na szeroki zakres dystrybucji, które można wybrać, przedstawię p
     ```
 
 
-4. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm. W&nbsp;przypadku, gdyby wyświetlał nam się błąd, należy użyć polecenia <span class="inline-code">source ~/.nvm/nvm.sh</span>.
+4. Chcąc się upewnić, że wszystko jest poprawnie zainstalowane, wykorzystujemy poniższe polecenie. Polecenie powinno zwrócić nam versję nvm. W&nbsp;przypadku, gdyby wyświetlał nam się błąd, należy użyć polecenia <span>source ~/.nvm/nvm.sh</span>.
 
     ```Shell
     nvm --version
