@@ -2,7 +2,7 @@
 title: "Pierwsza strona w Gatsby.js"
 date: "2021-04-06"
 updatedate: "2021-04-08"
-description: "Gatsby już zainstalowany, to można zacząć przygodę z tworzeniem naszej pierwszej strony. Utworzymy projekt, stronę główną, stronę 404"
+description: "Gatsby już zainstalowany, to można zacząć przygodę z tworzeniem naszej pierwszej strony. Utworzymy projekt, stronę główną"
 id: "3"
 
 
@@ -55,11 +55,11 @@ npm init gatsby
 
 Po uruchomieniu tego polecenia rozpocznie się proces tworzenia projektu, podczas którego:
 
-* nazwiemy nasz projekt, 
-* utworzymy katalog, 
-* określimy czy chcemy używać CMS - systemu zarządzania treścią na serwisie internetowym np. Wordpress.
-* wybierzemy system stylizowania - ja wybrałem Sass'a
-* oraz wybierzemy dodatkowe pluginy z niewielkiej listy, które będa doinstalowane podczas tworzenia projektu
+    * nazwiemy nasz projekt, 
+    * utworzymy katalog, 
+    * określimy czy chcemy używać CMS - systemu zarządzania treścią na serwisie internetowym np. Wordpress.
+    * wybierzemy system stylizowania - ja wybrałem Sass'a
+    * oraz wybierzemy dodatkowe pluginy z niewielkiej listy, które będa doinstalowane podczas tworzenia projektu
 
 ![tworzenie projektu gatsby](npminitgatsby.png)
 
@@ -71,7 +71,7 @@ Po uruchomieniu tego polecenia rozpocznie się proces tworzenia projektu, podcza
 Po utworzeniu projektu, wystarczą nam dwa polecenia, żeby móc zacząć tworzyć naszą witrynę:
 
 ```Shell    
-    
+
 cd nazwa-projektu
 npm run develop
 ```
@@ -81,13 +81,13 @@ Dostaniemy się do niej dzięki wpisaniu w wyszukiwarkę <span>localhost:8000</s
 
 ![domyślna strona](localhost.PNG)
 
-Jak widać widać jest to gotowy szablon z&nbsp;odnośnikami do poradników i&nbsp;dokumentacji. Zapisany jest w pliku index.js, który jest w katalogu <span class="file_path">./src/pages/</span>. Chcąc jednak zrobić samodzielnie stronę, nasz plik musi wyglądać w&nbsp;ten sposób:
+Jak widać widać jest to gotowy szablon z&nbsp;odnośnikami do poradników i&nbsp;dokumentacji. Zapisany jest w pliku index.js, który jest w katalogu <span class="file_path">./src/pages/</span>. Możemy go dowoli modyfikować i tworzyć kolejne strony, ale trzeba pamiętać, żeby struktura pliku danej strony wyglądała w ten sposób:
 
 ```JSX 
     
 import React from 'react'
 
-const Index = () => {
+const Nazwastrony = () => {
   return (
     // zawartość strony
     // zawartość strony
@@ -98,9 +98,9 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Nazwastrony
 ```
-
+Niezależnie od tego jaką stronę tworzymy, ta podstawa strony jest uniwersalna, dla każdej.   
 W miejscu zawartości musi być jakiś kontener, w którym będzie całość zamieszczona. Może to być zaimportowany komponent, lub znacznik html np. <span>`<div></div>`</span>. Pod tym względem mamy pełną dowolność.     
 
 Należy uważać, żeby nie umieszczać dwóch kontenerów obok siebie:

@@ -48,11 +48,6 @@ const Header = () => {
                     </Link>
                         </li>
                         <li className="menu__element">
-                            <Link to="/404" className="menu__link">
-                                404
-                    </Link>
-                        </li>
-                        <li className="menu__element">
                             <Link to="/author" className="menu__link">
                                 o autorze
                     </Link>
