@@ -132,7 +132,7 @@ const Blogpage = ({ location }) => {
                     </div>
                     <nav className="page-navigation">
                         <button className="page-navigation__button" onClick={() => {
-                            if (offset + 1 < Math.floor(articles.length / perPage)) setOffset(offset + 1)
+                            if (offset < Math.floor(articles.length / perPage)) setOffset(offset + 1)
                         }
                         }>next</button>
                         <p className="page-navigation__indicator" id='indicator'></p>
