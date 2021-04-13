@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="1100"
+   viewBox="0 0 211.66666 291.04167"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="dynamicalwebsitegraph.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
+   inkscape:export-filename="C:\Users\Daian\Documents\GitHub\GatsbyProjekt\src\posts\dynamiczneStronyGatsby\dynamicalwebsitegraph.png"
+   inkscape:export-xdpi="95.554741"
+   inkscape:export-ydpi="95.554741">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="622.99877"
+     inkscape:cy="549.28654"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1560"
+     inkscape:window-height="1040"
+     inkscape:window-x="2223"
+     inkscape:window-y="64"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.83504;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 102.96147,50.788331 V 160.34027"
+       id="path875" />
+    <rect
+       style="fill:#06d6a0;fill-opacity:1;stroke-width:0.983428;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect849"
+       width="116.9733"
+       height="33.128803"
+       x="44.07317"
+       y="18.900665" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.07473px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke-width:0.226869"
+       x="101.87836"
+       y="32.211922"
+       id="text853"><tspan
+         sodipodi:role="line"
+         id="tspan851"
+         x="101.87836"
+         y="32.211922"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';text-align:center;text-anchor:middle;stroke-width:0.226869">Pobieranie informacji</tspan><tspan
+         sodipodi:role="line"
+         x="101.87836"
+         y="43.55534"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';text-align:center;text-anchor:middle;stroke-width:0.226869"
+         id="tspan889">z plików markdown</tspan></text>
+    <rect
+       style="fill:#06d6a0;fill-opacity:1;stroke-width:0.983428;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect855"
+       width="116.9733"
+       height="33.128803"
+       x="44.07317"
+       y="63.784004" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.4519px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke-width:0.286298"
+       x="63.811241"
+       y="85.541405"
+       id="text859"><tspan
+         sodipodi:role="line"
+         id="tspan857"
+         x="63.811241"
+         y="85.541405"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke-width:0.286298">Tworzenie sluga</tspan></text>
+    <rect
+       style="fill:#06d6a0;fill-opacity:1;stroke-width:0.983428;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect861"
+       width="116.9733"
+       height="33.128803"
+       x="44.07317"
+       y="108.66733" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.4519px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke-width:0.286298"
+       x="58.279961"
+       y="128.30154"
+       id="text865"><tspan
+         sodipodi:role="line"
+         id="tspan863"
+         x="58.279961"
+         y="128.30154"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke-width:0.286298">Budowanie strony</tspan></text>
+    <rect
+       style="fill:#06d6a0;fill-opacity:1;stroke-width:0.983428;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect891"
+       width="116.9733"
+       height="33.128803"
+       x="44.474815"
+       y="153.55067" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.4519px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke-width:0.286298"
+       x="67.269691"
+       y="174.12395"
+       id="text895"><tspan
+         sodipodi:role="line"
+         id="tspan893"
+         x="67.269691"
+         y="174.12395"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro';stroke-width:0.286298">Gotowa strona</tspan></text>
+  </g>
+</svg>

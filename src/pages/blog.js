@@ -71,7 +71,6 @@ const Blogpage = ({ location }) => {
     const perPage = 4;
 
     useEffect(() => {
-        console.log(data.daty.edges.slice(offset * perPage, (offset * perPage) + perPage))
         const indic = document.getElementById('indicator')
         indic.innerHTML = offset + 1
     }, [offset])
