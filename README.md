@@ -6,4 +6,4 @@
 - [x] Uzupełnienie zawartości stron (index; blog; o autorze)
 - [x]  Wystylizowanie stron + responsywność
 - [x] Stylizacja postów
-- [ ] Utworzenie pełno prawnych postów
+- [x] Utworzenie pełno prawnych postów
