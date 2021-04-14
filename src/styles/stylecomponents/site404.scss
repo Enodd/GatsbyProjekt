@@ -2,12 +2,25 @@
 @import "../variables/variables.scss";
 
 .container404{
+    overflow: hidden;
+    *{
+        overflow: hidden;
+    }
     background-color: $dark;
-    @include wymiary(100vw,100vh);
+    @include wymiary(100vw, 100vh);
     @include simpleflex(column, center, center);
 }
+.list404{
+    &__element{
+        list-style: none;
+        color: $dark;
+        font-family: $serif;
+        font-size: $ps-c;
+        font-weight: 600;
+    }
+}
 .main404{
-    @include wymiary(70vw, 120vw);
+    @include wymiary(70vw, 140vw);
     padding: .75em;
     background-color: $light;
     text-align: center;
@@ -31,15 +44,20 @@
         padding: 1.25em;
         color: $light;
         border-radius: 40vw;
+        width: 70%;
         &:hover{
             background-color: darken($dark,5%);
         }
     }
 }
 @media(min-width:540px){
-    
+.list404{
+    &__element{
+        font-size: $s540-c;
+    }
+}
 .main404{
-    @include wymiary(60vw, 100vw);
+    @include wymiary(60vw, 120vw);
     padding: .75em;
     background-color: $light;
     text-align: center;
@@ -57,9 +75,13 @@
 }
 }
 @media(min-width:720px){
-    
+.list404{
+    &__element{
+        font-size: $s720-c;
+    }
+}
 .main404{
-    @include wymiary(50vw, 75vw);
+    @include wymiary(50vw, 90vw);
     padding: .75em;
     background-color: $light;
     text-align: center;
@@ -77,9 +99,15 @@
 }
 }
 @media(min-width:1024px){
+.list404{
+    &__element{
+        text-align: left;
+        font-size: $s1024-c;
+    }
+}
     
 .main404{
-    @include wymiary(40vw, 50vw);
+    @include wymiary(40vw, 60vw);
     padding: .75em;
     background-color: $light;
     text-align: center;
@@ -97,6 +125,11 @@
 }
 }
 @media(min-width:1600px){
+.list404{
+    &__element{
+        font-size: $s1600-c;
+    }
+}
     
 .main404{
     @include wymiary(30vw, 40vw);

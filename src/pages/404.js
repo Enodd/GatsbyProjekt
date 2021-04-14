@@ -13,16 +13,30 @@ const NotFoundPage = () => {
           Coś poszło nie&nbsp;tak&nbsp;😱
         </h1>
         <p className="main404__content">
-          Wygląda na to, że strona na, którą chcesz się dostać najprawdopodobniej nie istnieje.
+          Wygląda na to, że strona na, którą chcesz się dostać najprawdopodobniej:
         </p>
+        <ul className="main404__list list404">
+          <li className="list404__element">
+            nie istnieje - nie istniała lub została usunięta,
+          </li>
+          <li className="list404__element">
+            zmieniła swoje położenie i znajduje się pod innym adresem,
+          </li>
+          <li className="list404__element">
+            jest w trakcie tworzenia lub prowadzone są nad nią prace serwisowe
+          </li>
+        </ul>
         <h2 className="main404__title">
           Ale spokojnie!
         </h2>
         <p className="main404__content">
-          Zawsze możesz wrócić na stronę główną
+          Tutaj są odnośniki na jedną z naszych stron
         </p>
         <Link to='/' className="main404__link">
-          Powrót na stronę główną
+          Strona główna
+        </Link>
+        <Link to='/blog' className="main404__link">
+          Blog
         </Link>
       </main>
     </div>

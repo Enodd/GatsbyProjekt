@@ -24,8 +24,7 @@ const IndexPage = ({ data }) => {
                     <p className="section__content">
                         Co to za strona zapytasz?
                         <br />
-                        To jest strona, która jest zapisem moich przygód związanych z&nbsp;tworzeniem tej strony. Tutaj zamieszczone są opisy tego jak tworzyłem moją stronę,
-                        a&nbsp;także o moich wskazówkach i przemyśleniach na temat Gatsbiego.
+                        To jest strona, która jest wynikiem moich przygód związanych z&nbsp;tworzeniem tej strony. Tutaj zamieszczone są poradniki i&nbsp;ogólne omówienie tego jak tworzyłem moją stronę.
                         <br />
                         Na tej stronie możesz się dowiesz takich rzeczy jak:
                     </p>
